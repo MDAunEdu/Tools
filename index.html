@@ -51,8 +51,12 @@
       flex-wrap: wrap;
       gap: 1rem;
     }
-    li {
+    .tool-link {
       flex: 1 1 45%;
+      text-decoration: none;
+      color: inherit;
+    }
+    .tool-link li {
       display: flex;
       align-items: center;
       gap: 0.5rem;
@@ -61,18 +65,13 @@
       border-radius: 8px;
       transition: background 0.2s;
     }
-    li img {
+    .tool-link li:hover {
+      background: #eef2f7;
+    }
+    .tool-link img {
       width: 20px;
       height: 20px;
       object-fit: contain;
-    }
-    li:hover {
-      background: #eef2f7;
-    }
-    a {
-      color: #333;
-      text-decoration: none;
-      font-weight: 500;
     }
     footer {
       text-align: center;
